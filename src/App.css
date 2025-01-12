@@ -1,0 +1,65 @@
+* {
+  @apply text-[#333333e0];
+}
+
+#root {
+  @apply w-full h-full text-center;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+input[type="text"] {
+  @apply bg-gray-100 pl-1 rounded-lg focus:outline-none focus:border-gray-100 text-sm w-80;
+}
+
+.primary_button {
+  @apply bg-[#FF4201] h-full text-white text-sm font-light py-2 px-4 rounded-lg focus:outline-none;
+}
+
+.secondary_button {
+  @apply border-[#FF4201] border-2 h-full text-[#FF4201] uppercase text-sm font-semibold py-2 px-4 rounded-lg focus:outline-none;
+}
+
+.active {
+  color: #FF4201;
+}
+
+select {
+  @apply bg-white rounded-lg p-3 px-4 focus:outline-none focus:border-gray-100 text-sm w-full;
+  appearance: none;  
+  background-image: url('./assets/arrow_down.png');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: right 20px center; 
+  padding-right: 25px;
+}
+
+.profile {  
+  @apply h-6 rounded-full inline mr-2;
+}
+
+li span {
+  @apply text-gray-800 text-sm;
+}
+
+.selected {
+  @apply text-[#333333e0] bg-gray-100 p-1 px-2 rounded-md
+}
+
+.icons {
+  @apply h-5 aspect-square cursor-pointer;
+}
+
+.small_icons {
+  @apply h-4 aspect-square;
+}
+
+@font-face {
+  font-family: 'Kumbh Sans';
+  src: url('./assets/fonts/KumbhSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kumbh Sans Normal';
+  src: url('./assets/fonts/KumbhSans-Normal.ttf') format('truetype');
+}
+
